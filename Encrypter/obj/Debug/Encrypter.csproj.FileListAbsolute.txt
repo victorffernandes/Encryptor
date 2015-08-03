@@ -1,0 +1,9 @@
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\bin\Debug\Encrypter.exe.config
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\bin\Debug\Encrypter.exe
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\bin\Debug\Encrypter.pdb
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.csprojResolveAssemblyReference.cache
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.Properties.Resources.resources
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.csproj.GenerateResource.Cache
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.exe
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.pdb
+C:\Users\Victor Fernandes\Desktop\Work\Projetos\Encrypter\Encrypter\obj\Debug\Encrypter.Form1.resources
