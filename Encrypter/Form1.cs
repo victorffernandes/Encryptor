@@ -53,13 +53,10 @@ namespace Encrypter
                 }
             }
         }
-
-        private void keyPress_PassWord(object sender, KeyPressEventArgs e)
+        private void evaluateString(object sender, KeyPressEventArgs e)
         {
-            string allowedChar = "ç:╪[{,.<>};~´!ùºúõó╫òªìíèéã/àázyx?wv]ut|srqpo#nmlk$jihgf%edcba¨0987&654A32*1§ÚÙÕ(ÒÓ\"\'ÌÍ)ÈÉÃÀÁ- ZYX_WVUTS+RQPON=MLKJIHGFE\\@DCB πσ┌³²";
-            e.Handled = (allowedChar.IndexOf(e.KeyChar) == -1) ? true : false;
-            e.Handled = (e.KeyChar == (char)8) ? false : e.Handled;
-
+            Encrypt c = new Encrypt();
+            e.Handled = (c.al.IndexOf(e.KeyChar) == -1 && (e.KeyChar != (char)8));
         }
     }
 }

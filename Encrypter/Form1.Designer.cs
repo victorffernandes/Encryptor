@@ -48,6 +48,7 @@
             this.displayEncrypt.Name = "displayEncrypt";
             this.displayEncrypt.Size = new System.Drawing.Size(221, 149);
             this.displayEncrypt.TabIndex = 1;
+            this.displayEncrypt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // userUnEncrypt
             // 
@@ -57,6 +58,7 @@
             this.userUnEncrypt.Name = "userUnEncrypt";
             this.userUnEncrypt.Size = new System.Drawing.Size(224, 149);
             this.userUnEncrypt.TabIndex = 2;
+            this.userUnEncrypt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // displayUnEncrypt
             // 
@@ -66,6 +68,7 @@
             this.displayUnEncrypt.Name = "displayUnEncrypt";
             this.displayUnEncrypt.Size = new System.Drawing.Size(224, 149);
             this.displayUnEncrypt.TabIndex = 3;
+            this.displayUnEncrypt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // label1
             // 
@@ -115,8 +118,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPress_PassWord);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // textBox2
             // 
@@ -124,8 +126,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 11;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPress_PassWord);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // userEncrypt
             // 
@@ -134,6 +135,7 @@
             this.userEncrypt.Name = "userEncrypt";
             this.userEncrypt.Size = new System.Drawing.Size(224, 147);
             this.userEncrypt.TabIndex = 12;
+            this.userEncrypt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.evaluateString);
             // 
             // Form1
             // 

@@ -9,7 +9,7 @@ namespace Encrypter
     class Encrypt
     {
         public int passWordMinimum = 4;
-        string al = "ç:╪[{,.<>};~´!ùºúõó╫òªìíèéã/àázyx?wv]ut|srqpo#nmlk$jihgf%edcba¨0987&654A32*1§ÚÙÕ(ÒÓ\"\'ÌÍ)ÈÉÃÀÁ- ZYX_WVUTS+RQPON=MLKJIHGFE\\@DCB πσ┌³²";
+        public string al = "abcdefghijklmnopqrstuvwxyz0123456789,.! áàéèíìóòúùãõ?°º][}{@#$%¨&*()-+=";
         private string getInitializingVector(int length)
         {
             string charArray = al;
@@ -62,7 +62,6 @@ namespace Encrypter
 
                 key = mixWords(key, initializingVector);
             }
-
             return decryptedMessage;
         }
 
@@ -146,7 +145,7 @@ namespace Encrypter
 
         private string mixWords(string key,string encryptTarget)
         {
-            string allowedChar = al;
+                string allowedChar = al;
                 int maxCodifiedValue = allowedChar.Length;
                 //int keyCicles = encryptTarget.Length / key.Length;
                 string encryptedMessage = "";
