@@ -84,10 +84,10 @@ namespace Encrypter
             if (value < 0) return value * -1;
             else return value;
         }
-        private int getResultAfterCicles(int value)
+       public int getResultAfterCicles(int value)
         {
             string allowedChar = al;
-            int maxCodifiedValue = allowedChar.Length;
+            int maxCodifiedValue = 255;
             if(value == maxCodifiedValue)
             {
                 return value;

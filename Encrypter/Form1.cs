@@ -17,6 +17,18 @@ namespace Encrypter
         public Form1()
         {
             InitializeComponent();
+            Encrypt h = new Encrypt();
+            Bitmap b = (Bitmap)Image.FromFile("C:/Users/victor.fernandes/Downloads/logo.jpg");
+            for (int i = 0; i < b.Width; i++)
+            {
+                for(int j = 0;j<b.Height;j++)
+                {
+                    b.SetPixel(i, j, Color.FromArgb(h.getResultAfterCicles(b.GetPixel(i, j).R + 100),h.getResultAfterCicles(b.GetPixel(i, j).G + 100),h.getResultAfterCicles(b.GetPixel(i, j).B +100)));
+                    Console.WriteLine(b.GetPixel(i, j).R.ToString() + b.GetPixel(i, j).G.ToString() + b.GetPixel(i, j).B.ToString());
+                }
+            }
+            Image a = b;
+            a.Save("hue.jpg");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
